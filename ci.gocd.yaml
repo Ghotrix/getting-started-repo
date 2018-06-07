@@ -1,0 +1,21 @@
+format_version: 2
+
+pipelines:
+  demopipe:
+    parameters:
+      seconds_num: 5
+    materials:
+      mygit:
+        git: https://github.com/Ghotrix/getting-started-repo.git
+    stages:
+      - build:
+        clean_workspace: true
+        jobs:
+          - main:
+            tasks:
+              - exec:
+                command: build
+            artifacts:
+              - build:
+                source: *.html
+                destination: build
