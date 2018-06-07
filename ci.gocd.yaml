@@ -15,7 +15,7 @@ pipelines:
             main:
               tasks:
                 - exec:
-                    command: build
+                    command: ./build
               artifacts:
                 - build:
                     source: my-artifact.html
