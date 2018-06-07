@@ -17,5 +17,5 @@ pipelines:
                 command: build
             artifacts:
               - build:
-                source: *.html
+                source: my-artifact.html
                 destination: build
