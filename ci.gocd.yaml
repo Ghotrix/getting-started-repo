@@ -4,7 +4,7 @@ pipelines:
   demopipe:
     group: simple
     parameters:
-      seconds_num: 3
+      seconds_num: 5
     materials:
       mygit:
         git: https://github.com/Ghotrix/getting-started-repo.git
