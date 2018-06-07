@@ -2,6 +2,7 @@ format_version: 2
 
 pipelines:
   demopipe:
+    group: simple
     parameters:
       seconds_num: 5
     materials:
@@ -10,12 +11,12 @@ pipelines:
     stages:
       - build:
           clean_workspace: true
-            - jobs:
-              - main:
-                  tasks:
-                    - exec:
-                        command: build
-                  artifacts:
-                    - build:
-                        source: my-artifact.html
-                        destination: build
+          jobs:
+            main:
+              tasks:
+                - exec:
+                    command: build
+              artifacts:
+                - build:
+                    source: my-artifact.html
+                    destination: build
