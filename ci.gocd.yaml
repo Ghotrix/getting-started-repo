@@ -9,13 +9,13 @@ pipelines:
         git: https://github.com/Ghotrix/getting-started-repo.git
     stages:
       - build:
-        clean_workspace: true
-        - jobs:
-            - main:
-              tasks:
-                - exec:
-                  command: build
-              artifacts:
-                - build:
-                  source: my-artifact.html
-                  destination: build
+          clean_workspace: true
+            - jobs:
+              - main:
+                  tasks:
+                    - exec:
+                        command: build
+                  artifacts:
+                    - build:
+                        source: my-artifact.html
+                        destination: build
