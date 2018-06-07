@@ -3,7 +3,7 @@ format_version: 2
 pipelines:
   demopipe:
     group: simple
-    parameters:
+    environment_variables:
       seconds_num: 5
     materials:
       mygit:

@@ -3,8 +3,8 @@ format_version: 2
 pipelines:
   longer-demopipe:
     group: simple
-    parameters:
-      SECONDS_NUM: 15
+    environment_variables:
+      seconds_num: 15
     materials:
       mygit:
         git: https://github.com/Ghotrix/getting-started-repo.git
